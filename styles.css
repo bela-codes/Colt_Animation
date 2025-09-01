@@ -1,73 +1,31 @@
-h1 {
-    display: inline-block;
-    animation: spin 1s infinite reverse;
-}
-
-.box {
-    width: 300px;
-    height: 300px;
-    background-color: orangered;
-    color: white;
-    font-size: 2rem;
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: 3s spin infinite alternate 2s ease-in-out;
-    animation-name: spin;
-    animation-duration: 3s;
-    /* animation-iteration-count: infinite; */
-    animation-direction: alternate-reverse;
-    animation-delay: 2s;
-    animation-timing-function: ease-in-out;
+    height: 100vh;
 }
 
-@keyframes spin {
-    from {
-        transform : rotate(0deg);
-    }
-    to {
-        transform : rotate(360deg);
-    }
+.box {
+    background-color: tomato;
+    color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: move 2s ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 @keyframes move {
     0% {
-        transform: translateX(0%);
-        background-color: purple;
+        background-color: hotpink;
+        transform: translateX(0);
     }
-    25% {
-        transform: translateX(500px);
-    }
-    75% {
-        transform: translateX(800px);
-    }
+
     100% {
-        transform: translateX(200px);
-        background-color: magenta;
+        transform: translateX(300px);
+        background-color: olive;
     }
 }
-
-/* @keyframes colorchange {
-    from {
-        background-color: pink;
-    }
-    to {
-        background-color: cyan;
-    }
-} */
-
-/* @keyframes rainbow {
-    0% {
-        background-color: red;
-    }
-    20% {
-        background-color: yellow;
-    }
-    50% {
-        background-color: green;
-    }
-    100% {
-        background-color: violet;
-    }
-} */
-
