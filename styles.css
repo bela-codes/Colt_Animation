@@ -7,8 +7,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: move;
+    animation-name: spin;
     animation-duration: 3s;
+    /* animation-iteration-count: infinite; */
+    animation-direction: alternate-reverse;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform : rotate(0deg);
+    }
+    to {
+        transform : rotate(360deg);
+    }
 }
 
 @keyframes move {
@@ -19,8 +32,11 @@
     25% {
         transform: translateX(500px);
     }
+    75% {
+        transform: translateX(800px);
+    }
     100% {
-        transform: translateX(250px);
+        transform: translateX(200px);
         background-color: magenta;
     }
 }
@@ -31,14 +47,6 @@
     }
     to {
         background-color: cyan;
-    }
-} */
-/* @keyframes spin {
-    from {
-        transform : rotate(0deg);
-    }
-    to {
-        transform : rotate(180deg);
     }
 } */
 
