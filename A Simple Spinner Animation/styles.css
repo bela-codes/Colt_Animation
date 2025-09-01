@@ -12,7 +12,7 @@ body {
     border-radius: 50%;
     border: 12px solid #cfd8dc;
     border-top-color: #3f51b5;
-    animation: spin 1s infinite ease-in-out;
+    /* animation: spin 1s infinite ease-in-out; */
 }
 
 @keyframes spin {
