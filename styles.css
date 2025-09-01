@@ -7,15 +7,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: colorchange;
-    animation-duration: 2s;
+    animation-name: spin;
+    animation-duration: 3s;
 }
 
-@keyframes colorchange {
+/* @keyframes colorchange {
     from {
         background-color: pink;
     }
     to {
         background-color: cyan;
+    }
+} */
+@keyframes spin {
+    from {
+        transform : rotate(0deg);
+    }
+    to {
+        transform : rotate(180deg);
     }
 }
